@@ -54,7 +54,7 @@ header,
 /* HERO STYLES FOR HOME PAGE ONLY */
 
 .home {
-    background-image: url('images/hero-bg.png');
+    background-image: url("/images/hero-bg.png");
     background-size: cover; 
     background-position: center;
     color: white;
