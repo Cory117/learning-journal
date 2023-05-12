@@ -1,0 +1,279 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 2em;
+}
+
+header,
+.logo,
+.links ul {
+    display: flex;
+}
+
+.logo-img {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin-right: 0.25em;
+}
+
+.logo-title {
+    font-size: 0.875rem;
+    color: #0E0E0E;
+}
+
+.links li {
+    list-style-type: none;
+    margin-left: 1.5em;
+}
+
+.links li a {
+    color: #090909;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.links li a:hover,
+.links li a:active {
+    text-decoration: underline;
+}
+
+/* HERO STYLES FOR HOME PAGE ONLY */
+
+.home {
+    background-image: url('images/hero-bg.png');
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    justify-content: flex-end;
+    min-height: 400px;
+}
+
+.home-article-date,
+.home-article-title,
+.home-article-description {
+    max-width: 650px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero-article-date,
+.hero-article-title,
+.hero-article-description {
+    margin: 5px 0;
+}
+
+.hero-article-date {
+    font-size: 0.75rem;
+}
+
+.hero-article-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-article-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-article-title a:hover,
+.hero-article-title a:active {
+    text-decoration: underline;
+}
+
+.hero-article-description {
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+/* ARTICLES */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.article-img {
+    height: 100%;
+}
+
+.article-date,
+.article-title,
+.article-description {
+    margin: 5px 0;
+}
+
+.article-date {
+    font-size: 0.875rem;
+    padding-top: 1em;
+}
+
+.article-description {
+    color: #505050;
+    line-height: 1.25;
+}
+
+/* VIEW MORE LINK */
+
+.view-more {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.view-more a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.view-more a:hover,
+.view-more a:active {
+    opacity: 0.5;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 1em;
+}
+
+.footer-text {
+    text-align: center;
+    background-color: #202020;
+    padding: 2em;
+}
+
+.footer-title,
+.footer-copyright {
+    margin: 0.25em;
+    font-size: 0.75rem;
+}
+
+.footer-title {
+    color: #ECECEC;
+    font-weight: 700; 
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+}
+
+/* POST PAGE */
+
+.main-post {
+    color: #151515;
+}
+
+.main-post-img {
+    margin: 1em 0;
+    border-radius: 3px;
+}
+
+.main-post-title,
+.main-post-description {
+    margin: 0.75em 0;
+    line-height: 20px;
+}
+
+.main-post-title,
+.main-post-description,
+.recent-posts-title {
+    font-size: 1rem;
+}
+
+.recent-posts-title {
+    text-align: center;
+}
+
+.recent-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+} 
+
+/* ABOUT PAGE */
+
+.about-text {
+    margin-top: 1em;
+}
+
+.about-title {
+    font-size: 2.125rem;
+    line-height: 40px;
+}
+
+.about-description {
+    margin: 0.75em 0 2em 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .main-post {
+        max-width: 990px;
+        margin: 1.5em auto;
+    }
+    
+    .main-article-date,
+    .main-article-title,
+    .main-article-description {
+        margin: 0.5em 0;
+    }
+    
+    .main-article-title {
+        font-size: 2.25rem;
+    }
+    
+    .main-article-description {
+        max-width: 850px;
+    }
+    
+    .main-post-title {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    
+    .main-post-description {
+        font-size: 1.125rem;
+        line-height: 23px;
+    }
+    
+    .recent-posts-title {
+        font-size: 1.5rem;
+    }
+    
+    .about {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .about-title {
+        font-size: 2.25rem;
+    }
+}
